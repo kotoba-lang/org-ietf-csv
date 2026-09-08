@@ -27,7 +27,7 @@
   the first as a header because a caller said so. A parser that sniffs for a
   header gets it wrong on exactly the files where every value looks like a
   name."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def ^:private quote-ch \")
 
