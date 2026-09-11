@@ -68,8 +68,8 @@ JVM-only, and `(str acc c)` in a loop is quadratic in the field length.
 ## Test
 
 ```sh
-clojure -M:test
-nbb --classpath "src:test" test/run.cljk
-clojure -M:cljs -m cljs.main --target node -m csv.cljs-runner
-clojure -M:lint
+kbb -M:test
+kbb --backend sci --classpath "src:test" test/run.cljk
+kbb -M:cljs -m cljs.main --target node -m csv.cljs-runner
+kbb -M:lint
 ```
